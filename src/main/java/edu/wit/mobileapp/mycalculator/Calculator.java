@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-public class MainActivity extends AppCompatActivity {
+public class Calculator extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
                 String selectedGender = (String) chosen.getText();
 
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, Result.class);
+                intent.setClass(Calculator.this, Result.class);
 
                 Bundle bundle = new Bundle();
                 bundle.putInt("ft", Integer.parseInt(feet.getText().toString()));

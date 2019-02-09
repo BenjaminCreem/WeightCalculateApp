@@ -13,6 +13,7 @@ public class Result extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_result);
+        this.setTitle("Result");
 
         Bundle bundle = this.getIntent().getExtras();
         int feet = bundle.getInt("ft");
